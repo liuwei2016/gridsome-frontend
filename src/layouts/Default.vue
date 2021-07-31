@@ -11,16 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <g-link class="nav-link" to="/">Home</g-link>
+              <g-link class="nav-link" to="/">首页</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" to="/about">About</a>
+              <a class="nav-link" to="/about">关于我</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" to="/posts">Sample Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" to="/contract">Contact</a>
+              <a class="nav-link" to="/contact">联系我</a>
             </li>
           </ul>
         </div>
@@ -60,7 +57,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2021</p>
+            <p class="copyright text-muted">Copyright &copy; dawei 2021</p>
           </div>
         </div>
       </div>
