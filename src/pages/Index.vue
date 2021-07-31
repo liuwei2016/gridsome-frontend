@@ -36,7 +36,7 @@
               <h2 class="post-title">{{edge.node.title}}</h2>
           </g-link>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+            <g-link to="/">dawei</g-link>
             {{edge.node.created_at}}
           </p>
           <p>
