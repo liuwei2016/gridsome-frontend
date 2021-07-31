@@ -4,7 +4,7 @@
   <header 
     class="masthead" 
     
-    :style="{backgroundImage: `url(https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/post-sample-image.dpwt9n06p4o.jpg)`}"
+    :style="{backgroundImage: `url(${siteImage})`}"
   >
     <div class="overlay"></div>
     <div class="container">
@@ -101,6 +101,20 @@ query ($page: Int) {
 <script>
 import { Pager } from 'gridsome'
 console.log('000', process.env)
+const siteImageArr = [
+  'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1512036849132-48508f294900.53s3vse3gis0.jpeg',
+  'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1418065514041-ace6539f65cf.70xo6kvo5740.jpeg',
+  'https://ws1.sinaimg.cn/large/857f115dly1gt0gugw0czj20u018xq9d.jpg',
+  'http://ww1.sinaimg.cn/large/002rzxz7gy1grokldr1vqj62tc240qv502.jpg',
+  'http://ww1.sinaimg.cn/large/002rzxz7gy1grokm31suuj63tt2daqv702.jpg',
+  'http://ww1.sinaimg.cn/large/002rzxz7gy1grokmhe59hj647s2da4qs02.jpg',
+  'http://ww1.sinaimg.cn/large/857f115dly1gt0gb60yb9j21hc0xc778.jpg',
+  'http://ww1.sinaimg.cn/large/857f115dly1gt0gb62scmj20zj0mo79p.jpg',
+  'http://ww1.sinaimg.cn/large/857f115dly1gt0gb636dqj20ts0tsqak.jpg',
+  'http://ww1.sinaimg.cn/large/857f115dly1gt0gb6652zj21hc0u0am5.jpg',
+  'https://ws1.sinaimg.cn/thumbnail/857f115dly1gt0gk4u0s9j20lm0ea0v2.jpg',
+]
+
 export default {
   name:'HomePage',
   metaInfo: {
@@ -108,6 +122,11 @@ export default {
   },
   components: {
     Pager
+  },
+  data:function(){
+    return{
+       siteImage : siteImageArr[Math.floor(Math.random()*siteImageArr.length)]
+    }
   }
 }
 </script>
