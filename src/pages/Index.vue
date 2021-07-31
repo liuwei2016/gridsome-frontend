@@ -4,7 +4,7 @@
   <header 
     class="masthead" 
     
-    :style="{backgroundImage: `url(${GRIDSOME_API_URL+$page.general.edges[0].node.cover.url})`}"
+    :style="{backgroundImage: `url(https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/post-sample-image.dpwt9n06p4o.jpg)`}"
   >
     <div class="overlay"></div>
     <div class="container">
