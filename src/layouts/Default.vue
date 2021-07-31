@@ -14,10 +14,10 @@
               <g-link class="nav-link" to="/">首页</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" to="/about">关于我</a>
+              <g-link  class="nav-link" to="/about">关于我</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" to="/contact">联系我</a>
+              <g-link class="nav-link" to="/contact">联系我</g-link>
             </li>
           </ul>
         </div>
@@ -36,20 +36,12 @@
                 <a href="#">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a target="_blank" href="https://github.com/liuwei2016">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
