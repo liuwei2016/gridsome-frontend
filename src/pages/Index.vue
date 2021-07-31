@@ -3,6 +3,7 @@
     <!-- Page Header -->
   <header 
     class="masthead" 
+    
     :style="{backgroundImage: `url(${GRIDSOME_API_URL+$page.general.edges[0].node.cover.url})`}"
   >
     <div class="overlay"></div>
@@ -68,6 +69,9 @@ query ($page: Int) {
                 id
                 title
                 content
+                cover {
+                  url
+                }
                 tags {
                     id
                     title
@@ -84,7 +88,8 @@ query ($page: Int) {
           title
           subtitle
           cover {
-            url
+            url,
+            name
           }
         }
       }
@@ -99,7 +104,7 @@ console.log('000', process.env)
 export default {
   name:'HomePage',
   metaInfo: {
-    title: 'Hello, world!'
+    title: '大伟前端博客'
   },
   components: {
     Pager

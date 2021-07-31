@@ -26,28 +26,28 @@
                 <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                    <label>Name</label>
+                    <label>*Name</label>
                     <input v-model="form.name" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                     <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                    <label>Email Address</label>
+                    <label>*Email Address</label>
                     <input v-model="form.email"  type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Phone Number</label>
+                    <label>*Phone Number</label>
                     <input v-model="form.phone"  type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                    <label>Message</label>
+                    <label>*Message</label>
                     <textarea v-model="form.message"  rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                     </div>
@@ -76,6 +76,12 @@ export default {
     },
     methods:{
         async onSubmit(){
+            const { name , email , phone , message} = this.form
+
+            if(!name || !message || !(phone||message) ){
+                return
+            }
+
             try{
                 const {data} = await axios({
                     method:'POST',
