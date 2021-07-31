@@ -101,17 +101,7 @@ query ($page: Int) {
 <script>
 import { Pager } from 'gridsome'
 import dayjs from 'dayjs'
-// console.log('000', process.env)
-const siteImageArr = [
-  'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1512036849132-48508f294900.53s3vse3gis0.jpeg',
-  'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1418065514041-ace6539f65cf.70xo6kvo5740.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1418065460487-3e41a6c84dc5.w5gko9rlae8.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/photo-1509671658102-fbe78e4f7b60.2tpskv8vei80.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/site-3.54xd43thj7w0.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/site-4.xpl204dwsww.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/site-2.lggs48rn6n4.jpeg',
-   'https://cdn.jsdelivr.net/gh/liuwei2016/DragAndDrop@master/imgs/post-sample-image.dpwt9n06p4o.jpg',
-]
+ 
 
 export default {
   name:'HomePage',
@@ -124,7 +114,7 @@ export default {
 
   data:function(){
     return{
-       siteImage : siteImageArr[Math.floor(Math.random()*siteImageArr.length)]
+       siteImage : 'banner/'+ Math.ceil(Math.random()*9) +".jpg"
     }
   },
   methods:{

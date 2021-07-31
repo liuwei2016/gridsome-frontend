@@ -3,6 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './assets/css/index.css'
+import './assets/css/hljs.css'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
