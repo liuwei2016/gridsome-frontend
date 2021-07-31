@@ -62,6 +62,7 @@
     </Layout>
 </template>
 <script>
+import axios from 'axios'
 export default {
     name:'ContactPage',
     data(){
@@ -78,7 +79,7 @@ export default {
         async onSubmit(){
             const { name , email , phone , message} = this.form
 
-            if(!name || !message || !(phone||message) ){
+            if(!name || !message || !(phone||email) ){
                 return
             }
 
@@ -90,6 +91,7 @@ export default {
                 })
                 console.log('contact:onSubmit',data)
             } catch(err){
+                console.log(err)
                 window.alert('发送失败')
             }
         }
