@@ -51,7 +51,7 @@
         <!-- <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div> -->
-        <pager :info="$page.posts.pageInfo" />
+        <pager class="page-nav" :info="$page.posts.pageInfo" />
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
 </template>
 <page-query>
 query ($page: Int) {
-    posts: allStrapiPost(perPage:2, page:$page) @paginate {
+    posts: allStrapiPost(perPage:5, page:$page) @paginate {
         pageInfo {
           totalPages
           currentPage
@@ -116,4 +116,5 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
+.page-nav a{  display: inline-block; margin-right: 4px;}
 </style>
