@@ -40,7 +40,7 @@
             {{ dayjsFormat(edge.node.created_at) }}
           </p>
           <p>
-            <span v-for="tag in edge.node.tags" :key="tag.id">
+            <span class="tag" v-for="tag in edge.node.tags" :key="tag.id">
               <g-link :to="'/tag/'+tag.id">{{ tag.title }}</g-link>
                &nbsp; &nbsp;
             </span>

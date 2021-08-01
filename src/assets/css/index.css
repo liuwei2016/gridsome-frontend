@@ -29,12 +29,12 @@
   }
   
   a {
-    color: #212529;
+    color: #a23927;
     transition: all 0.2s;
   }
   
   a:focus, a:hover {
-    color: #0085A1;
+    color: #e24f36;
   }
   
   blockquote {
@@ -307,6 +307,7 @@
   @media only screen and (min-width: 768px) {
     .post-preview > a > .post-title {
       font-size: 36px;
+      color: #1d1b1b;
     }
   }
   
@@ -412,3 +413,8 @@
     display: block;
     max-width: 700px;
   }
+
+  a > .post-title {
+    color: #1d1b1b;
+  }
+  .tag a{ font-size: 14px; color: #999;}
