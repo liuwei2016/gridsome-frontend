@@ -1,7 +1,10 @@
 <template>
   <Layout>
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+    <header
+      class="masthead"
+      :style="{ 'background-image': `url(${siteImage})` }"
+    >
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -21,10 +24,10 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>
             Dawei, a front-end programmer who is not doing his job properly,
-             hopes to make a little progress every day and realize financial freedom as soon as possible. 
-            I hope to realize more self-worth, communicate and learn more, just play. Ha ha
-
-        </p>
+            hopes to make a little progress every day and realize financial
+            freedom as soon as possible. I hope to realize more self-worth,
+            communicate and learn more, just play. Ha ha
+          </p>
         </div>
       </div>
     </div>
@@ -33,9 +36,14 @@
 
 <script>
 export default {
-  name:'AboutPage',
+  name: "AboutPage",
   metaInfo: {
-    title: 'About us'
+    title: "关于我",
+  },
+  data() {
+    return {
+      siteImage: "banner/" + Math.ceil(Math.random() * 9) + ".jpg",
+    };
   }
-}
+};
 </script>

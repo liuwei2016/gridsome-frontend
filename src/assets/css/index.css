@@ -408,3 +408,7 @@
     padding: 25px 35px;
   }
   
+  .container img{
+    display: block;
+    max-width: 700px;
+  }
