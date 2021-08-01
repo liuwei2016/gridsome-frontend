@@ -106,7 +106,7 @@ import dayjs from 'dayjs'
 export default {
   name:'HomePage',
   metaInfo: {
-    title: '大伟的博客'
+    title: '艾特大伟'
   },
   components: {
     Pager

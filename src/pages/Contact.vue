@@ -112,6 +112,9 @@
 import axios from "axios";
 export default {
   name: "ContactPage",
+  metaInfo: {
+    title: '艾特大伟 - 联系我'
+  },
   data() {
     return {
       siteImage: "banner/" + Math.ceil(Math.random() * 9) + ".jpg",

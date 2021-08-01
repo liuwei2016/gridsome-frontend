@@ -38,7 +38,7 @@
 export default {
   name: "AboutPage",
   metaInfo: {
-    title: "关于我",
+    title: '艾特大伟 - 关于我'
   },
   data() {
     return {
